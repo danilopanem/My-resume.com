@@ -1,0 +1,182 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --primary-color: #ffa113;
+    --text-color: #727171;  
+}
+
+html
+{
+    font-size: 10px;
+}
+
+body
+{
+    font-family: Helvetica;
+    background-color: black;
+    color: white;
+}
+
+a
+{
+   text-decoration: none;
+   color: white 
+}
+
+.container
+{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: gray;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media screen and (max-width: 786px) 
+{
+    .container
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }   
+}
+
+.profile 
+{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.grp1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.profile_container
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_profileImg 
+{
+    max-width: 250px;
+}
+
+.profile_name_firstName
+{
+    color: white;
+    font-weight: 200;
+    font-size: 30px
+
+}
+
+.profile_name_lastName
+{
+    color: white;
+    font-weight: 200;
+    font-size: 30px
+
+}
+
+.profile_title
+{
+    margin-top: 2rem;
+}
+
+.description
+{
+    font-family: Helvetica;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black
+}
+
+.title 
+{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.item_preTitle
+{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.item_title
+{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+.item_subtitle
+{
+    font-size: 1.4rem;
+    color:white;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) 
+{
+    .profile_container
+    {
+        flex-direction: column;
+    }
+}
+
+.skills_list
+{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+.educ_item
+{
+    margin-top: 2rem;
+    
+}
+
+.exp_item
+{
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.interest_items
+{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.interest_item
+{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: .5rem;
+    color: black 
+}
